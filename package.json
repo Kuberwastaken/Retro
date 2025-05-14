@@ -1,0 +1,20 @@
+{
+  "name": "retronotes",
+  "version": "1.0.0",
+  "description": "Windows 98-style RetroNotes text editor application",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "keywords": [
+    "windows98",
+    "retro",
+    "text-editor",
+    "notepad"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+} 
