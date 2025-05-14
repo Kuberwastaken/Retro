@@ -1,0 +1,89 @@
+/* Dark mode styles for RetroNotes */
+
+body.dark-mode {
+    /* Override Windows 98 theme variables */
+    --ActiveBorder: rgb(64, 64, 64);
+    --ActiveTitle: rgb(0, 64, 128);
+    --AppWorkspace: rgb(48, 48, 48);
+    --Background: rgb(0, 64, 64);
+    --ButtonAlternateFace: rgb(60, 60, 60);
+    --ButtonDkShadow: rgb(0, 0, 0);
+    --ButtonFace: rgb(64, 64, 64);
+    --ButtonHilight: rgb(128, 128, 128);
+    --ButtonLight: rgb(96, 96, 96);
+    --ButtonShadow: rgb(32, 32, 32);
+    --ButtonText: rgb(220, 220, 220);
+    --GradientActiveTitle: rgb(0, 82, 128);
+    --GradientInactiveTitle: rgb(64, 64, 64);
+    --GrayText: rgb(160, 160, 160);
+    --Hilight: rgb(0, 0, 96);
+    --HilightText: rgb(255, 255, 255);
+    --HotTrackingColor: rgb(65, 105, 225);
+    --InactiveBorder: rgb(64, 64, 64);
+    --InactiveTitle: rgb(48, 48, 48);
+    --InactiveTitleText: rgb(128, 128, 128);
+    --InfoText: rgb(220, 220, 220);
+    --InfoWindow: rgb(64, 64, 48);
+    --Menu: rgb(64, 64, 64);
+    --MenuText: rgb(220, 220, 220);
+    --Scrollbar: rgb(64, 64, 64);
+    --TitleText: rgb(255, 255, 255);
+    --Window: rgb(32, 32, 32);
+    --WindowFrame: rgb(0, 0, 0);
+    --WindowText: rgb(220, 220, 220);
+
+    /* Set body background for dark mode */
+    background-color: var(--AppWorkspace);
+}
+
+/* Override specific elements */
+body.dark-mode #document-textarea {
+    background: var(--Window);
+    color: var(--WindowText);
+}
+
+body.dark-mode .win98-title-bar {
+    background: #000060; /* Darker blue for title bar */
+}
+
+body.dark-mode .win98-button {
+    background: var(--ButtonFace);
+    border: 1px solid var(--ButtonLight);
+    box-shadow: inset -1px -1px var(--ButtonDkShadow), inset 1px 1px var(--ButtonHilight);
+}
+
+body.dark-mode .win98-button:active {
+    border: 1px solid var(--ButtonDkShadow);
+    box-shadow: inset -1px -1px var(--ButtonHilight), inset 1px 1px var(--ButtonDkShadow);
+}
+
+body.dark-mode .win98-minimize-btn::after,
+body.dark-mode .win98-maximize-btn::after,
+body.dark-mode .win98-close-btn::after {
+    color: var(--ButtonText);
+}
+
+/* Specific fix for minimize button icon background in dark mode */
+body.dark-mode .win98-minimize-btn::after {
+    background: var(--ButtonText); /* Change background for the minimize icon */
+}
+
+/* Specific fix for maximize button border in dark mode */
+body.dark-mode .win98-maximize-btn::after {
+    border-color: var(--ButtonText);
+}
+
+body.dark-mode .message-box-content {
+    background-color: var(--ButtonFace);
+}
+
+body.dark-mode .message-box button {
+    background-color: var(--ButtonFace);
+    color: var(--ButtonText);
+}
+
+/* Print helper should stay light for printing */
+#print-helper {
+    background: white !important;
+    color: black !important;
+} 

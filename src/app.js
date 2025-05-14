@@ -224,5 +224,11 @@ $(window).on("keydown", function (e) {
 	} else if (e.key == "p" && e.ctrlKey && !e.shiftKey && !e.altKey && !e.metaKey) {
 		e.preventDefault();
 		print();
+	} else if (e.key == "d" && e.ctrlKey && e.shiftKey && !e.altKey && !e.metaKey) {
+		e.preventDefault();
+		// Toggle dark mode with Ctrl+Shift+D
+		if (typeof toggleDarkMode === 'function') {
+			toggleDarkMode();
+		}
 	}
 });

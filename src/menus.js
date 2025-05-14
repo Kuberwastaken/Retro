@@ -175,6 +175,20 @@ var menus = {
 			description: "Makes overflowing lines either wrap or scroll.",
 		},
 	],
+	"&View": [
+		{
+			label: "&Dark Mode",
+			shortcutLabel: "Ctrl+Shift+D",
+			ariaKeyShortcuts: "Control+Shift+D",
+			checkbox: {
+				toggle: toggleDarkMode,
+				check: function() {
+					return $('body').hasClass('dark-mode');
+				},
+			},
+			description: "Toggle between light and dark mode.",
+		},
+	],
 	"&Search": [
 		{
 			label: "&Find...",
