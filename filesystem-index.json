@@ -1,0 +1,16 @@
+{
+  "fs": "XmlHttpRequest",
+  "options": {
+    "baseUrl": "/",
+    "index": {
+      "/": {
+        "desktop": {
+          "type": "directory",
+          "size": 0,
+          "mtime": "2024-05-14T15:00:00.000Z"
+        }
+      },
+      "/desktop/": {}
+    }
+  }
+} 

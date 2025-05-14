@@ -65,7 +65,11 @@ var default_file_name_for_title = "Untitled";
 var default_file_name_for_saving = "Untitled.txt";
 
 function update_title() {
-	document.title = (file_name || default_file_name_for_title) + " - RetroNotes";
+	const title = (file_name || default_file_name_for_title) + " - RetroNotes";
+	document.title = title;
+	if (document.getElementById("window-title")) {
+		document.getElementById("window-title").textContent = title;
+	}
 }
 
 update_title();

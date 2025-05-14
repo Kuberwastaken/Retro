@@ -43,12 +43,22 @@
 		<script src="lib/moment.js"></script>
 		<script src="lib/FileSaver.js"></script>
 		<script src="src/app.js"></script>
+		<script src="src/window-frame.js"></script>
 		<script src="src/menus.js"></script>
 		<style>
 			#app {
 				background: var(--ButtonFace);
 				display: flex;
 				flex-direction: column;
+				border: 3px solid #c0c0c0;
+				border-top-color: #dfdfdf;
+				border-left-color: #dfdfdf;
+				border-right-color: #7f7f7f;
+				border-bottom-color: #7f7f7f;
+				box-shadow: 1px 1px 0 black;
+				margin: 10px;
+				max-width: calc(100% - 20px);
+				max-height: calc(100% - 20px);
 			}
 			#document-textarea {
 				width: 100%;
